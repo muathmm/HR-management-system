@@ -1,0 +1,118 @@
+body {
+    box-sizing: content-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    
+  }
+  
+  
+  .logo {
+    margin: 0 auto; 
+    text-align: center; 
+    flex: 1; 
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .title {
+    color: #84847d; 
+    margin: 0;
+    padding: 0 10px; 
+    font-size: 24px;
+    line-height: 50px; 
+    margin-right:0 auto; 
+  }
+  .title {
+    color: hsl(60, 21%, 86%); 
+    margin: 0;
+    padding: 0 10px; 
+    font-size: 24px;
+    line-height: 50px; 
+    margin-right:0 auto; 
+  }
+
+  .navbar {
+    background-color:  rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    
+    
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-items: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  .navbar ul li {
+    display: inline;
+    margin-left: 10px; 
+  }
+  
+  .navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: auto; 
+  }
+  
+  .navbar ul li a:hover {
+    color: #ffff00;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.f-icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+
+#employee-info {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 60px; /* To avoid overlap with the footer */
+}
+
+.employee-card {
+    background-color: #e7e7e7;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border-radius: 30px;
+  background: hsl(71, 47%, 91%);
+  box-shadow: hsla(67, 90%, 72%, 0.251) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+ 
+  padding: 1.25rem;
+}
