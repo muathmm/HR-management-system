@@ -77,6 +77,70 @@ body {
   .navbar ul li a:hover {
     color: #ffff00;
   }
+  /* .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  } */
+  .form-caption {
+    margin-bottom: 20px; 
+    text-align: center; 
+  }
+
+  .hr-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    
+
+  }
+  form-group  input{
+margin: auto;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: auto;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="url"],
+  .form-group select {
+    
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* So padding doesn't add to the width */
+  }
+  
+  .submit-btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+  
+  }
+  
+  .submit-btn:hover {
+    background-color: #004494;
+  }
   footer {
     background-color: #333;
     color: #fff;
@@ -105,7 +169,7 @@ footer a {
     margin-bottom: 60px; /* To avoid overlap with the footer */
 }
 
-.employee-card {
+.employee_card {
     background-color: #e7e7e7;
     margin-bottom: 10px;
     padding: 10px;
@@ -115,4 +179,52 @@ footer a {
   box-shadow: hsla(67, 90%, 72%, 0.251) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
  
   padding: 1.25rem;
+}
+
+#employeesContainer > section {
+  margin-bottom: 40px;
+  border-bottom: 1px solid black;
+}
+
+#employeesContainer h2 {
+  border-bottom: 2px solid #ccc;
+
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color:#333;
+  color: #ddd;
+}
+
+.employee-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: inline-block;
+  margin: 16px;
+  width: 300px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.employee-image {
+  width: 50%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 50%px;
+}
+
+.employee-info {
+  padding: 16px;
+  text-align: center;
+}
+
+.employee-info h2 {
+  color: #333;
+  margin: 10px 0;
+}
+
+.employee-info p {
+  color: #666;
+  font-size: 14px;
 }
