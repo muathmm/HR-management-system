@@ -197,7 +197,7 @@ footer a {
 }
 
 .employee-card {
-  background-color: #fff;
+  background-color: #e4e2e2;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   display: inline-block;
@@ -208,10 +208,11 @@ footer a {
 }
 
 .employee-image {
+  margin-top: 5px;
   width: 50%;
   max-height: 200px;
   object-fit: cover;
-  border-radius: 50%px;
+  border-radius: 50px;
 }
 
 .employee-info {
