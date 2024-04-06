@@ -1,3 +1,4 @@
+
 function Employee(fullName, department, level, imgUrl, id, salary) {
   this.id = id;
   this.fullName = fullName;
@@ -7,7 +8,7 @@ function Employee(fullName, department, level, imgUrl, id, salary) {
   this.salary = salary;
   
 }
-
+let employees=new Array();
 let currentIds = new Set();
 
 function generateUniqueId() {
@@ -85,6 +86,36 @@ function handleFormSubmit(event) {
 
   let emp = new Employee(fullName, department, level, imageUrl, employeeId, salary);
   emp.render();
+  employees=JSON.parse(localStorage.getItem('employees'))?JSON.parse(localStorage.getItem('employees')):[];
+  employees.push(emp);
+  localStorage.setItem('employees',JSON.stringify(employees) );
+  document.getElementById('fullName').value="";
+
+  document.getElementById('imageUrl').value="";
 }
 
+
+
+
+
+  
+ 
+
+
+document.addEventListener('DOMContentLoaded',()=>{
+
+  const storedEmployeesJSON = localStorage.getItem('employees');
+  console.log(storedEmployeesJSON);
+  const storedEmployees = storedEmployeesJSON ? JSON.parse(storedEmployeesJSON) : [];
+
+  storedEmployees.forEach(storedEmployee => {
    
+    const emp = new Employee(storedEmployee.fullName, storedEmployee.department, storedEmployee.level, storedEmployee.imgurl, storedEmployee.id, storedEmployee.salary);
+ 
+    emp.render();
+  });
+
+})
+ 
+  
+

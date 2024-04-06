@@ -124,7 +124,7 @@ margin: auto;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    box-sizing: border-box; /* So padding doesn't add to the width */
+    box-sizing: border-box;
   }
   
   .submit-btn {
@@ -141,25 +141,26 @@ margin: auto;
   .submit-btn:hover {
     background-color: #004494;
   }
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    
-    bottom: 0;
-    width: 100%;
+ 
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 footer a {
-    color: #fff;
-    margin: 0 10px;
+  color: #fff;
+  margin: 0 10px;
 }
 
-.f-icon{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
+.f-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
 }
 
 
@@ -228,4 +229,26 @@ footer a {
 .employee-info p {
   color: #666;
   font-size: 14px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tfoot td {
+  font-weight: bold;
+  background-color: #e8e8e8;
 }
