@@ -8,7 +8,15 @@ function Employee(fullName, department, level, imgUrl, id, salary) {
   this.salary = salary;
   
 }
-let employees=new Array();
+let employees=[
+  {fullame:'ghazi Samer',Department:'Administration',level:'Senior'},
+  {fullame:'Lana Ali',Department:'Finance',level:'Senior'},
+  {fullame:'Tamara Ayoub',Department:'Markiting',level:'Senior'},
+  {fullame:'Safi Walid',Department:'Administration',level:'Mid-Senior'},
+  {fullame:'Omar Zaid',Department:'Markiting',level:'Senior'},
+  {fullame:'Hadi Ahmad',Department:'Finance',level:'Mid-Senior'},
+  {fullame:'Rana Salih',Department:'Development',level:'Junior'}
+  ];
 let currentIds = new Set();
 
 function generateUniqueId() {
@@ -41,6 +49,7 @@ function calculateSalary(level) {
 }
 
 Employee.prototype.render = function() {
+
   let departmentContainer = document.getElementById(`department-${this.department}`);
    if (!departmentContainer) {
      departmentContainer = document.createElement('section');
@@ -76,7 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function handleFormSubmit(event) {
   event.preventDefault();
-
   const fullName = document.getElementById('fullName').value;
   const department = document.getElementById('department').value;
   const level = document.getElementById('level').value;
@@ -100,7 +108,11 @@ function handleFormSubmit(event) {
 
   
  
+employees.forEach((element) => {
+  let emp=new Employee(element.fullame,element.Department,element.level,'empty',generateUniqueId(),calculateSalary(element.level)) ;
+emp.render();
 
+}); 
 
 document.addEventListener('DOMContentLoaded',()=>{
 
